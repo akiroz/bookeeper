@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "bookeeper",
+    "slug": "bookeeper",
+    "sdkVersion": "23.0.0",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/icons/app.png",
+    "privacy": "unlisted",
+    "loading": {
+      "icon": "./assets/icons/loading.png",
+      "backgroundColor": "#333333",
+      "hideExponentText": false
+    }
+  }
+}
