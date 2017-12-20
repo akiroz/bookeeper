@@ -42,7 +42,7 @@ Hosted:
 
 - Using the Expo client, scan the QR Code on the terminal.
 
-Android:
+Android: (only tested on Emulator, I don't have an Android device)
 
 - On another terminal, run `exp build:android`.
 - Let Expo handle KeyPair generation.
@@ -50,7 +50,7 @@ Android:
 - Check on the build status using `exp build:status`
 - Download the APK file from the URL provided.
 
-iOS:
+iOS: (not tested, I don't have an Apple developer account)
 
 - On another terminal, run `exp build:ios`.
 - Enter your Apple ID, Password and Provisioning Profile.
