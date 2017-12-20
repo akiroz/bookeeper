@@ -8,9 +8,9 @@ There are 3 ways to build / run this app:
   - Requires Expo client on mobile device
   - https://play.google.com/store/apps/details?id=host.exp.exponent
   - https://itunes.apple.com/us/app/expo-client/id982107779
-- iOS Standalone - build an iOS IPA
+- iOS Standalone - build an iOS IPA using Expo's build server
   - Requires an Apple provisioning profile
-- Android Standalone - build an android APK
+- Android Standalone - build an android APK using Expo's build server
 
 ## Prerequisites
 
@@ -19,7 +19,9 @@ There are 3 ways to build / run this app:
   - [leiningen](leiningen.org) (Clojure build tool)
 - Node.JS
   - [yarn](yarnpkg.com) (JS package manager)
-  - [expo](expo.io) CLI or (React Native Toolchain)
+  - [expo](expo.io) CLI (React Native Toolchain)
+
+- An Expo account (Sign-Up at https://expo.io)
 
 Plus requirements mentioned above for each type of build.
 
@@ -34,6 +36,7 @@ $ lein build-prod
 $ yarn install
 $ exp start
 ```
+Login to your expo account.
 
 Hosted:
 
@@ -43,10 +46,14 @@ Android:
 
 - On another terminal, run `exp build:android`.
 - Let Expo handle KeyPair generation.
+- Wait for the build to complete on Expo's build servers, this could take a while.
+- Check on the build status using `exp build:status`
 - Download the APK file from the URL provided.
 
 iOS:
 
 - On another terminal, run `exp build:ios`.
 - Enter your Apple ID, Password and Provisioning Profile.
+- Wait for the build to complete on Expo's build servers, this could take a while.
+- Check on the build status using `exp build:status`
 - Download the IPA file from the URL provided.
